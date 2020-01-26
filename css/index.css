@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-left: 0em;
+}
+  
+.header {
+    grid-area: header;
+    background-color:red
+  }
+.aside {
+    grid-area: sidebar;
+    background-color: lightslategrey;
+  }
+.content {
+    grid-area: content;
+    background-color: midnightblue;
+  }
+  
+  
+body{background-color:#6699cc;
+  }
