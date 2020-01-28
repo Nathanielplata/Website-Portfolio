@@ -5,7 +5,8 @@
 
 .grid {
     display: grid;
-    background-color: white;
+    background: linear-gradient(to right top,
+   white, black);
     grid-gap: 10px;
     grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -29,12 +30,12 @@
  }
 
 #heading {
-  background-color: rgba(65, 65, 65, 0.979);
+  background-color: rgba(255, 255, 255, 0.979);
   padding: 15px;
   height: 25px;
-  color: white;
+  color: black;
   font-size: 18px;
-  border-bottom: 5px solid #FF6200;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.418);
 }
 .categoryGridArea {
   background-position: center;
@@ -52,7 +53,7 @@
 .sidebar{
   grid-area: sidebar;
   color: white;
-  border-color: royalblue;
+  box-shadow: cadetblue;
   text-align: center;
   font-size: 20px;
   
@@ -65,13 +66,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   text-align: center;
-  color:rgb(224, 224, 224);
+  color:black;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 .content p{
-  border: 1px solid white;
+  border: 5px solid black;
   padding: 15px;
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
@@ -87,9 +88,9 @@
 }
 
 .grid div:nth-child(even) {
-  background-color: red;
+  background-color: lightyellow;
 }
 
 .grid div:nth-child(odd) {
-  background-color: black;
+  background-color: rgb(15, 15, 15);
 }
