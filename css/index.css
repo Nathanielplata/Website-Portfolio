@@ -1,22 +1,58 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  margin-left: 0em;
+
+* {margin: 0;
+  padding: 0;
 }
+
+.grid {
+    display: grid;
+    background-color: lightslategray;
+    grid-gap: 10px;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sidebar title "
+    "sidebar header"
+    "sidebar content"
+    "sidebar footer";
+}
+
+.title{
+  grid-area: title;
+ }
+
+.header{
+  grid-area: header;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  background-color: black;
+  text-emphasis-color: white;
   
-.header {
-    grid-area: header;
-    background-color:red
-  }
-.aside {
-    grid-area: sidebar;
-    background-color: lightslategrey;
-  }
-.content {
-    grid-area: content;
-    background-color: midnightblue;
-  }
-  
-  
-body{background-color:#6699cc;
-  }
+}
+
+.content{
+  grid-area: content;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  text-align: center
+}
+.content p{
+  border: 1px solid white;
+  padding: 15px;
+  margin:0;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.grid div:nth-child(even) {
+  background-color: red;
+}
+
+.grid div:nth-child(odd) {
+  background-color: green;
+}
