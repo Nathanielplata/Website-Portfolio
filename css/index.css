@@ -8,9 +8,10 @@
     background-color: lightslategray;
     grid-gap: 10px;
     grid-template-columns: 20% 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "sidebar title "
+    "sidebar title"
     "sidebar header"
     "sidebar content"
     "sidebar footer";
@@ -18,6 +19,13 @@
 
 .title{
   grid-area: title;
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  
  }
 
 .header{
@@ -27,7 +35,7 @@
 .sidebar{
   grid-area: sidebar;
   background-color: black;
-  text-emphasis-color: white;
+  box-shadow: royalblue;
   
 }
 
@@ -43,6 +51,9 @@
   border: 1px solid white;
   padding: 15px;
   margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
 }
 
 .footer{
