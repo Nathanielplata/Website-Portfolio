@@ -22,8 +22,8 @@ h2
     color: rgb(0, 0, 0);}    
 
     /*Jumbotron*/
-.jumbotron{background-image: url(../images/Profile_picture_2.jpg);
-    background-color: #000000; 
+.jumbotron{ background-color: #000000;
+    background-image: url(../images/Profile_picture_2.jpg); 
     opacity: 0.65; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,6 +75,7 @@ background: rgba(0, 0, 0, 0.5);
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
 .cardContainer {
   margin-top: 20px;
 }
