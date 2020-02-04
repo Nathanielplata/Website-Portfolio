@@ -16,7 +16,7 @@ h2
     color: rgb(0, 0, 0);}
 
 .display-h{text-align: left;
-    font-size: medium;}
+    font-size: large;}
 
 .bold{font-weight:bold;
     color: rgb(0, 0, 0);}    
@@ -29,9 +29,9 @@ h2
     background-repeat: no-repeat;
     height: calc(100vh - 25px);
     display: flex;
-    align-items: center;
-    justify-content: center;
-        }
+    align-items: left;
+    justify-content: left;
+    }
 
 .overlay {
 background: rgba(0, 0, 0, 0.5);
